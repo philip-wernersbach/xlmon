@@ -1,0 +1,7 @@
+AC_DEFUN([OS_ERROR_REQUIRED_FUNCTION], [
+  AC_MSG_ERROR(Missing required Operating System function!)
+])
+
+AC_DEFUN([OS_SEARCH_LIBS], [
+  AC_SEARCH_LIBS($1, [], [], OS_ERROR_REQUIRED_FUNCTION)
+])
